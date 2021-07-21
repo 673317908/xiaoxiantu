@@ -1,7 +1,7 @@
 <template>
   <div>
     <Nav />
-    <header></header>
+    <Header />
     <main>
       <router-view></router-view>
     </main>
@@ -11,10 +11,12 @@
 
 <script>
 import Nav from '@/components/nav/index.vue'
+import Header from '@/components/header/index.vue'
 export default {
   name: 'layout',
   components: {
-    Nav
+    Nav,
+    Header
   },
   setup () {
     return {}
